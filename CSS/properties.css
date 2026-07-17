@@ -183,12 +183,13 @@ body {
   height: 450px;
   background:
     linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)),
-    url("../assets/images/banner/properties-banner.jpg") center/cover no-repeat;
+    url("../images/luxury_family_villa.jpg") center/cover no-repeat;
 
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-size: cover;
 
   margin-top: 80px;
 }
