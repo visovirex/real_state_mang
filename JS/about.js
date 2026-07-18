@@ -58,18 +58,153 @@ window.addEventListener("load", () => {
 
 const storyBtn = document.querySelector(".story-btn");
 
-if(storyBtn){
+if (storyBtn) {
+  storyBtn.addEventListener("mouseenter", () => {
+    storyBtn.style.transform = "translateY(-4px)";
+  });
 
-    storyBtn.addEventListener("mouseenter",()=>{
+  storyBtn.addEventListener("mouseleave", () => {
+    storyBtn.style.transform = "translateY(0)";
+  });
+}
+// ===============================
+// Mission & Vision Cards
+// ===============================
 
-        storyBtn.style.transform="translateY(-4px)";
+const missionCards = document.querySelectorAll(".mission-card");
 
+missionCards.forEach((card) => {
+  card.addEventListener("mouseenter", () => {
+    card.style.boxShadow = "0 20px 40px rgba(37,99,235,.18)";
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.style.boxShadow = "0 10px 30px rgba(0,0,0,.08)";
+  });
+});
+// ===============================
+// Why Choose Us Cards
+// ===============================
+
+const chooseCards = document.querySelectorAll(".choose-card");
+
+chooseCards.forEach((card) => {
+  card.addEventListener("mouseenter", () => {
+    card.style.boxShadow = "0 18px 40px rgba(37,99,235,.18)";
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.style.boxShadow = "0 10px 30px rgba(0,0,0,.08)";
+  });
+});
+// ===============================
+// Counter Animation
+// ===============================
+
+const counters = document.querySelectorAll(".counter");
+
+const startCounter = () => {
+  counters.forEach((counter) => {
+    const target = +counter.dataset.target;
+
+    let count = 0;
+
+    const speed = target / 100;
+
+    const updateCounter = () => {
+      count += speed;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count);
+
+        requestAnimationFrame(updateCounter);
+      } else {
+        counter.innerText = target + "+";
+      }
+    };
+
+    updateCounter();
+  });
+};
+
+const statsSection = document.querySelector(".company-stats");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      startCounter();
+
+      observer.unobserve(statsSection);
+    }
+  });
+});
+
+observer.observe(statsSection);
+// ===============================
+// Team Cards
+// ===============================
+
+const teamCards = document.querySelectorAll(".team-card");
+
+teamCards.forEach((card) => {
+  card.addEventListener("mouseenter", () => {
+    card.style.boxShadow = "0 20px 40px rgba(37,99,235,.18)";
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.style.boxShadow = "0 10px 30px rgba(0,0,0,.08)";
+  });
+});
+// ===============================
+// Testimonial Cards
+// ===============================
+
+const testimonialCards = document.querySelectorAll(".testimonial-card");
+
+testimonialCards.forEach((card) => {
+  card.addEventListener("mouseenter", () => {
+    card.style.boxShadow = "0 20px 40px rgba(37,99,235,.18)";
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.style.boxShadow = "0 10px 30px rgba(0,0,0,.08)";
+  });
+});
+// ===============================
+// CTA Button Animation
+// ===============================
+
+const ctaButtons = document.querySelectorAll(".primary-btn, .secondary-btn");
+
+ctaButtons.forEach((button) => {
+  button.addEventListener("mouseenter", () => {
+    button.style.transform = "translateY(-4px)";
+  });
+
+  button.addEventListener("mouseleave", () => {
+    button.style.transform = "translateY(0)";
+  });
+});
+// ===============================
+// Scroll To Top
+// ===============================
+
+const scrollTopBtn = document.getElementById("scrollTop");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 400) {
+    scrollTopBtn.style.display = "flex";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+});
+
+if (scrollTopBtn) {
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+
+      behavior: "smooth",
     });
-
-    storyBtn.addEventListener("mouseleave",()=>{
-
-        storyBtn.style.transform="translateY(0)";
-
-    });
-
+  });
 }
