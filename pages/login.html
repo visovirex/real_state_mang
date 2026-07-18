@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login | EstatePro</title>
+
+    <link rel="stylesheet" href="../css/login.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="#" class="logo">
+            <i class="fa-solid fa-house"></i>
+            <span>EstatePro</span>
+          </a>
+
+          <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/properties.html">Properties</a></li>
+            <li><a href="#">Agents</a></li>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+          </ul>
+
+          <div class="nav-buttons">
+            <a href="../pages/login.html" class="login-btn">Login</a>
+            <a href="#" class="register-btn">Register</a>
+          </div>
+
+          <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ================= LOGIN HERO ================= -->
+
+    <section class="login-hero">
+      <div class="container">
+        <div class="login-hero-content">
+          <span class="hero-badge"> Welcome Back </span>
+
+          <h1>Login to Your EstatePro Account</h1>
+
+          <p>
+            Access your dashboard, manage your favorite properties, track
+            inquiries, and enjoy a personalized real estate experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LOGIN FORM ================= -->
+
+    <section class="login-section">
+      <div class="container">
+        <div class="login-wrapper">
+          <div class="login-card">
+            <div class="login-header">
+              <h2>Welcome Back</h2>
+
+              <p>Sign in to continue to your EstatePro account.</p>
+            </div>
+
+            <form class="login-form">
+              <div class="form-group">
+                <label>Email Address</label>
+
+                <input type="email" placeholder="Enter your email" required />
+              </div>
+
+              <div class="form-group">
+                <label>Password</label>
+
+                <div class="password-box">
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                  />
+
+                  <i class="fa-solid fa-eye" id="togglePassword"></i>
+                </div>
+              </div>
+
+              <div class="login-options">
+                <label class="remember-me">
+                  <input type="checkbox" />
+
+                  Remember Me
+                </label>
+
+                <a href="forgot-password.html"> Forgot Password? </a>
+              </div>
+
+              <button type="submit" class="login-btn">Login</button>
+            </form>
+
+            <div class="divider">
+              <span>OR</span>
+            </div>
+
+            <div class="social-login">
+              <button class="google-btn">
+                <i class="fa-brands fa-google"></i>
+
+                Continue with Google
+              </button>
+
+              <button class="facebook-btn">
+                <i class="fa-brands fa-facebook-f"></i>
+
+                Continue with Facebook
+              </button>
+            </div>
+
+            <p class="signup-link">
+              Don't have an account?
+
+              <a href="register.html"> Create One </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BENEFITS ================= -->
+
+    <section class="login-benefits">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Why Login to EstatePro?</h2>
+
+          <p>
+            Unlock exclusive features designed to make your property buying,
+            selling, and renting experience easier than ever.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <!-- Benefit 1 -->
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <h3>Secure Account</h3>
+
+            <p>
+              Your personal information and property activities are protected
+              with advanced security measures.
+            </p>
+          </div>
+
+          <!-- Benefit 2 -->
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <h3>Save Favorites</h3>
+
+            <p>
+              Save your favorite properties and access them anytime from your
+              personal dashboard.
+            </p>
+          </div>
+
+          <!-- Benefit 3 -->
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fa-solid fa-bell"></i>
+            </div>
+
+            <h3>Property Alerts</h3>
+
+            <p>
+              Receive instant notifications when new properties matching your
+              preferences become available.
+            </p>
+          </div>
+
+          <!-- Benefit 4 -->
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+
+            <h3>Personal Dashboard</h3>
+
+            <p>
+              Track your inquiries, appointments, saved properties, and account
+              activities from one place.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LOGIN CTA ================= -->
+
+    <section class="login-cta">
+      <div class="container">
+        <div class="cta-content">
+          <span class="cta-badge"> New to EstatePro? </span>
+
+          <h2>Create Your Free Account Today</h2>
+
+          <p>
+            Join thousands of buyers, sellers, and renters using EstatePro to
+            discover verified properties, save favorites, contact agents, and
+            manage everything from one secure dashboard.
+          </p>
+
+          <div class="cta-buttons">
+            <a href="register.html" class="primary-btn"> Create Account </a>
+
+            <a href="properties.html" class="secondary-btn">
+              Browse Properties
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Company -->
+
+          <div class="footer-column">
+            <h2>EstatePro</h2>
+
+            <p>
+              EstatePro is your trusted real estate platform for buying,
+              selling, and renting premium properties with confidence.
+            </p>
+
+            <div class="social-links">
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+
+              <a href="#">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+
+            <ul>
+              <li><a href="index.html">Home</a></li>
+
+              <li><a href="properties.html">Properties</a></li>
+
+              <li><a href="about.html">About Us</a></li>
+
+              <li><a href="contact.html">Contact</a></li>
+
+              <li><a href="register.html">Register</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+
+          <div class="footer-column">
+            <h3>Services</h3>
+
+            <ul>
+              <li><a href="#">Buy Property</a></li>
+
+              <li><a href="#">Sell Property</a></li>
+
+              <li><a href="#">Rent Property</a></li>
+
+              <li><a href="#">Property Management</a></li>
+
+              <li><a href="#">Investment Advice</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+
+          <div class="footer-column">
+            <h3>Contact</h3>
+
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+
+              Dhaka, Bangladesh
+            </p>
+
+            <p>
+              <i class="fa-solid fa-phone"></i>
+
+              +880 1700 000000
+            </p>
+
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+
+              info@estatepro.com
+            </p>
+
+            <p>
+              <i class="fa-solid fa-clock"></i>
+
+              Mon - Sat : 9:00 AM - 8:00 PM
+            </p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-bottom">
+          <p>© 2026 EstatePro. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ================= SCROLL TO TOP ================= -->
+
+    <button id="scrollTop">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="../js/login.js"></script>
+  </body>
+</html>
