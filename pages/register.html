@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Login | EstatePro</title>
+    <title>Register | EstatePro</title>
 
-    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/register.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap"
@@ -33,7 +33,6 @@
           <ul class="nav-links">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../pages/properties.html">Properties</a></li>
-            <li><a href="#">Agents</a></li>
             <li><a href="../pages/about.html">About</a></li>
             <li><a href="../pages/contact.html">Contact</a></li>
           </ul>
@@ -50,40 +49,75 @@
       </nav>
     </header>
 
-    <!-- ================= LOGIN HERO ================= -->
+    <!-- ================= REGISTER HERO ================= -->
 
-    <section class="login-hero">
+    <section class="register-hero">
       <div class="container">
-        <div class="login-hero-content">
-          <span class="hero-badge"> Welcome Back </span>
+        <div class="register-hero-content">
+          <span class="hero-badge"> Join EstatePro </span>
 
-          <h1>Login to Your EstatePro Account</h1>
+          <h1>Create Your Free EstatePro Account</h1>
 
           <p>
-            Access your dashboard, manage your favorite properties, track
-            inquiries, and enjoy a personalized real estate experience.
+            Register today to explore verified properties, connect with trusted
+            agents, save your favorite listings, and manage your real estate
+            journey from one secure dashboard.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- ================= LOGIN FORM ================= -->
+    <!-- ================= REGISTER FORM ================= -->
 
-    <section class="login-section">
+    <section class="register-section">
       <div class="container">
-        <div class="login-wrapper">
-          <div class="login-card">
-            <div class="login-header">
-              <h2>Welcome Back</h2>
+        <div class="register-wrapper">
+          <div class="register-card">
+            <div class="register-header">
+              <h2>Create Your Account</h2>
 
-              <p>Sign in to continue to your EstatePro account.</p>
+              <p>Join EstatePro and start your real estate journey today.</p>
             </div>
 
-            <form class="login-form">
+            <form class="register-form">
+              <div class="form-group">
+                <label>Full Name</label>
+
+                <input
+                  type="text"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+
               <div class="form-group">
                 <label>Email Address</label>
 
                 <input type="email" placeholder="Enter your email" required />
+              </div>
+
+              <div class="form-group">
+                <label>Phone Number</label>
+
+                <input
+                  type="tel"
+                  placeholder="Enter your phone number"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label>Account Type</label>
+
+                <select required>
+                  <option value="">Select Account Type</option>
+
+                  <option>Buyer</option>
+
+                  <option>Seller</option>
+
+                  <option>Agent</option>
+                </select>
               </div>
 
               <div class="form-group">
@@ -93,7 +127,7 @@
                   <input
                     type="password"
                     id="password"
-                    placeholder="Enter your password"
+                    placeholder="Create password"
                     required
                   />
 
@@ -101,24 +135,37 @@
                 </div>
               </div>
 
-              <div class="login-options">
-                <label class="remember-me">
-                  <input type="checkbox" />
+              <div class="form-group">
+                <label>Confirm Password</label>
 
-                  Remember Me
-                </label>
+                <div class="password-box">
+                  <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm password"
+                    required
+                  />
 
-                <a href="forgot-password.html"> Forgot Password? </a>
+                  <i class="fa-solid fa-eye" id="toggleConfirmPassword"></i>
+                </div>
               </div>
 
-              <button type="submit" class="login-btn">Login</button>
+              <div class="terms">
+                <label>
+                  <input type="checkbox" required />
+
+                  I agree to the Terms & Conditions and Privacy Policy.
+                </label>
+              </div>
+
+              <button type="submit" class="register-btn">Create Account</button>
             </form>
 
             <div class="divider">
               <span>OR</span>
             </div>
 
-            <div class="social-login">
+            <div class="social-register">
               <button class="google-btn">
                 <i class="fa-brands fa-google"></i>
 
@@ -132,110 +179,111 @@
               </button>
             </div>
 
-            <p class="signup-link">
-              Don't have an account?
+            <p class="login-link">
+              Already have an account?
 
-              <a href="register.html"> Create One </a>
+              <a href="login.html"> Login Here </a>
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= BENEFITS ================= -->
+    <!-- ================= WHY JOIN ================= -->
 
-    <section class="login-benefits">
+    <section class="why-join">
       <div class="container">
         <div class="section-heading">
-          <h2>Why Login to EstatePro?</h2>
+          <h2>Why Join EstatePro?</h2>
 
           <p>
-            Unlock exclusive features designed to make your property buying,
-            selling, and renting experience easier than ever.
+            Become part of our growing real estate community and enjoy exclusive
+            features that make buying, selling, and renting properties easier
+            than ever.
           </p>
         </div>
 
-        <div class="benefits-grid">
-          <!-- Benefit 1 -->
+        <div class="join-grid">
+          <!-- Card 1 -->
 
-          <div class="benefit-card">
-            <div class="benefit-icon">
-              <i class="fa-solid fa-shield-halved"></i>
+          <div class="join-card">
+            <div class="join-icon">
+              <i class="fa-solid fa-house-circle-check"></i>
             </div>
 
-            <h3>Secure Account</h3>
+            <h3>Verified Properties</h3>
 
             <p>
-              Your personal information and property activities are protected
-              with advanced security measures.
+              Browse thousands of carefully verified residential and commercial
+              properties with complete details.
             </p>
           </div>
 
-          <!-- Benefit 2 -->
+          <!-- Card 2 -->
 
-          <div class="benefit-card">
-            <div class="benefit-icon">
+          <div class="join-card">
+            <div class="join-icon">
               <i class="fa-solid fa-heart"></i>
             </div>
 
             <h3>Save Favorites</h3>
 
             <p>
-              Save your favorite properties and access them anytime from your
-              personal dashboard.
+              Save your favorite properties and quickly access them whenever you
+              log into your account.
             </p>
           </div>
 
-          <!-- Benefit 3 -->
+          <!-- Card 3 -->
 
-          <div class="benefit-card">
-            <div class="benefit-icon">
-              <i class="fa-solid fa-bell"></i>
+          <div class="join-card">
+            <div class="join-icon">
+              <i class="fa-solid fa-user-tie"></i>
             </div>
 
-            <h3>Property Alerts</h3>
+            <h3>Connect with Agents</h3>
 
             <p>
-              Receive instant notifications when new properties matching your
-              preferences become available.
+              Contact trusted real estate agents directly to schedule visits and
+              receive professional guidance.
             </p>
           </div>
 
-          <!-- Benefit 4 -->
+          <!-- Card 4 -->
 
-          <div class="benefit-card">
-            <div class="benefit-icon">
+          <div class="join-card">
+            <div class="join-icon">
               <i class="fa-solid fa-chart-line"></i>
             </div>
 
             <h3>Personal Dashboard</h3>
 
             <p>
-              Track your inquiries, appointments, saved properties, and account
-              activities from one place.
+              Manage saved listings, appointments, messages, and account
+              activities from one convenient dashboard.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= LOGIN CTA ================= -->
+    <!-- ================= REGISTER CTA ================= -->
 
-    <section class="login-cta">
+    <section class="register-cta">
       <div class="container">
         <div class="cta-content">
-          <span class="cta-badge"> New to EstatePro? </span>
+          <span class="cta-badge"> Already a Member? </span>
 
-          <h2>Create Your Free Account Today</h2>
+          <h2>Login and Continue Your Property Journey</h2>
 
           <p>
-            Join thousands of buyers, sellers, and renters using EstatePro to
-            discover verified properties, save favorites, contact agents, and
-            manage everything from one secure dashboard.
+            Already have an EstatePro account? Sign in to access your dashboard,
+            manage saved properties, contact agents, and stay updated with the
+            latest listings.
           </p>
 
           <div class="cta-buttons">
-            <a href="register.html" class="primary-btn"> Create Account </a>
+            <a href="login.html" class="primary-btn"> Login Now </a>
 
             <a href="properties.html" class="secondary-btn">
               Browse Properties
@@ -293,7 +341,7 @@
 
               <li><a href="contact.html">Contact</a></li>
 
-              <li><a href="register.html">Register</a></li>
+              <li><a href="login.html">Login</a></li>
             </ul>
           </div>
 
@@ -360,6 +408,6 @@
       <i class="fa-solid fa-arrow-up"></i>
     </button>
 
-    <script src="../js/login.js"></script>
+    <script src="../js/register.js"></script>
   </body>
 </html>
